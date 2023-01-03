@@ -3,7 +3,7 @@ import { AppContext } from '../AppContext';
 
 export const PageBooks = () => {
 	
-	const { books } = useContext< any >(AppContext);
+	const { books } = useContext<any>(AppContext);
 	console.log(books)
 
 	return (
