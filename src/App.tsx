@@ -4,10 +4,11 @@ import { PageWelcome } from './components/PageWelcome';
 import { PageBooks } from './components/PageBooks';
 import { PageFlashcards } from './components/PageFlashcards';
 import { useContext } from 'react';
-import { AppContext, IAppContext } from './AppContext';
+import { AppContext} from './AppContext';
 
 function App() {
-	const {appTitle} = useContext<IAppContext>(AppContext);
+	const {appTitle} = useContext< any >(AppContext);
+
 	return (
 		<div className="App">
 			<h1>{appTitle}</h1>

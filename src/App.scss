@@ -23,3 +23,37 @@ body {
 		}
 	}
 }
+
+.pageBooks {
+	.books {
+		margin-top: 1rem;
+		.book {
+			background-color: #222;
+			margin-top: 1rem;
+			padding: 1rem;
+			display: flex;
+			gap: 1rem;
+			width: 35rem;
+			align-items: flex-start;
+			border-radius: .5rem;
+
+			img {
+				width: 8rem;
+				object-fit: contain;
+			}
+
+			.info {
+				.title {
+					font-size: 2rem;
+					margin-bottom: 1rem;
+					color: rgb(219, 198, 160);
+				}
+
+				.description {
+					font-size: 1.1rem;
+					font-style: italic;
+				}
+			}
+		}
+	}
+}
