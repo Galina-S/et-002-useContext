@@ -1,13 +1,13 @@
 import './App.scss';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
-import { PageWelcome } from './pages/PageWelcome';
-import { PageBooks } from './pages/PageBooks';
-import { PageFlashcards } from './pages/PageFlashcards';
-import { AppContext } from './AppContext';
+import { PageWelcome } from './components/PageWelcome';
+import { PageBooks } from './components/PageBooks';
+import { PageFlashcards } from './components/PageFlashcards';
+import { AppContext, IAppContext } from './AppContext';
 import { useContext } from 'react';
 
 function App() {
-	const {appTitle} = useContext(AppContext);
+	const {appTitle} = useContext<IAppContext>(AppContext);
 	return (
 		<div className="App">
 			<h1>{appTitle}</h1>
