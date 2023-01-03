@@ -1,11 +1,11 @@
 import {useContext} from 'react';
-import { AppContext } from '../AppContext';
+import { AppContext, IAppContext } from '../AppContext';
 import { NavLink } from 'react-router-dom';
 
 
 export const PageWelcome = () => {
 
-	const { books, flashcards  } = useContext< any >(AppContext);
+	const { books, flashcards  } = useContext<IAppContext>(AppContext);
 
 	return (
 		<>

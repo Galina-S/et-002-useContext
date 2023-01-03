@@ -7,6 +7,7 @@ export const PageBooks = () => {
 
 	return (
 		<div className = "pageBooks">
+		<p>We currently have {books.length} books:</p>
 		{books.length === 0 ? 
 			(<p>Loading...</p>)
 			: ( <div className="books">
@@ -16,7 +17,7 @@ export const PageBooks = () => {
 								<img src={`https://edwardtanguay.vercel.app/share/images/techBooks/${book.idCode}.jpg`}/>
 								<div className="info">
 									<div className="title">{book.title}</div>
-									<div className="description">{book.description}</div>
+									<div className="description">{book.description}</div>									
 								</div>
 							</div>
 						);

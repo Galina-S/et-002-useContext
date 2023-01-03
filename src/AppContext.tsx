@@ -47,7 +47,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 
     const [flashcards, setFlashcards] = useState<IFlashcard[]>([]);
 
-    const appTitle = "The Berlin Study Group";
+    const appTitle = "The Study Group";
 
     useEffect(()=> {
        setTimeout(()=> {
@@ -59,7 +59,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
                     id: rawBook.id,
                     idCode: rawBook.idCode,
                     title: rawBook.title,
-                    description: rawBook.descrition,
+                    description: rawBook.description,
                     language: rawBook.language === '' ? 'English' : capitalizeFirstLetter(rawBook.language)
                 };
                 _books.push(_book)
