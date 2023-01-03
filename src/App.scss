@@ -22,38 +22,68 @@ body {
 			color: rgb(211, 211, 110);
 		}
 	}
-}
 
-.pageBooks {
-	.books {
-		margin-top: 1rem;
-		.book {
-			background-color: #222;
+	.pageBooks {
+		.books {
 			margin-top: 1rem;
-			padding: 1rem;
-			display: flex;
-			gap: 1rem;
-			width: 35rem;
-			align-items: flex-start;
-			border-radius: .5rem;
+			.book {
+				background-color: #222;
+				margin-bottom: 1rem;
+				padding: 1rem;
+				display: flex;
+				gap: 1rem;
+				width: 35rem;
+				align-items: flex-start;
+				border-radius: .5rem;
 
-			img {
-				width: 8rem;
-				object-fit: contain;
-			}
-
-			.info {
-				.title {
-					font-size: 2rem;
-					margin-bottom: 1rem;
-					color: rgb(219, 198, 160);
+				img {
+					width: 8rem;
+					object-fit: contain;
 				}
 
-				.description {
-					font-size: 1.1rem;
-					font-style: italic;
+				.info {
+					.title {
+						font-size: 2rem;
+						margin-bottom: 1rem;
+						color: rgb(219, 198, 160);
+					}
+
+					.description {
+						font-size: 1.1rem;
+						font-style: italic;
+					}
 				}
 			}
 		}
 	}
+
+	.pageFlashcards {
+        .flashcards {
+            .flashcard {
+                background-color: #222;
+                margin-bottom: 1rem;
+                padding: 1rem;
+                width: 39rem;
+                border-radius: .5rem;
+    
+                .front {
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+                    color: rgb(219, 198, 160);
+                    cursor: pointer;
+                }
+    
+                .back {
+                    color: brown;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    a {
+        color: rgb(209, 166, 85);
+    }
 }
+
+
+    
