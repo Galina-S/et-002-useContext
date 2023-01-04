@@ -40,7 +40,7 @@ export function capitalizeFirstLetter(line: string) {
 }
 
 const booksUrl = 'https://edwardtanguay.vercel.app/share/techBooks.json';
-const flashcardsUrl = 'http://localhost:5556/flashcards';
+const flashcardsUrl = 'https://json-server-sigma-one.vercel.app/flashcards';
 
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
     const [books, setBooks] = useState<IBook[]>([]);
